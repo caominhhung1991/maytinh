@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>May Tinh</title>
+    <link rel="stylesheet" href="maytinh.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/build/api-55b46095da0a64818cd0953aee9db9d6a1854deb.min.css" />
+    <link rel="stylesheet" href="assets/build/calc_basic_container-b0c88a1121a922d05ff3fe8a353291c3e09523d5.min.css" />
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/nangcao.css">
+</head>
+
+<body>
+    <!--Draggable DIV:-->
+    <div id="maytinh">
+        <div id="maytinhheader">
+            <label class="custom-check">
+                <input type="checkbox" name="onOff" onclick="showMayTinhToggle()" />
+                <i></i>
+                <span></span>
+            </label>
+
+            <div class="tooltip">
+                <i id="ghim" class="fa fa-thumb-tack ghimChecked" onclick="ghimToggle()"></i>
+                <!-- <i id="" class="fa fa-thumb-tack ghimChecked" onclick="ghimToggle()"></i> -->
+                <span id="tooltiptext-ghim" class="tooltiptext">Bỏ ghim</span>
+            </div>
+
+        </div>
+        <div id="maytinh-content" class="animated">
+            <div class="main-congthuc">
+                <button onclick="showPhuongTrinhBac2()" class="key congthuc">Giải phương trình bậc 2</button>
+                <button onclick="showPhuongTrinhBac3()" class="key congthuc">Giải phương trình bậc 3</button>
+                <button onclick="showHeBatPhuongTrinh()" class="key congthuc">Giải hệ bất phương trình</button>
+                <button onclick="showXemThem()" class="xemthem">...</button>
+            </div>
+
+            <div id="main" role="main">
+            </div>
+        </div>
+    </div>
+
+    <div id="nangcao" class="animated">
+        <div class="nangcao-title">
+            <h3>Giải phương trình bậc 2</h3>
+        </div>
+        <div class="nangcao-debai">
+            <small>f(x):</small>
+            <input type="text" id="a" class="nangcao-input-nhap" placeholder="nhập a" tabindex="1" onchange="onChangeDeBai()">x
+            <sup>2</sup>
+            +
+            <input value="4" type="text" id="b" class="nangcao-input-nhap" placeholder="nhập b" tabindex="2" onchange="onChangeDeBai()">x +
+            <input value="-4" type="text" id="c" class="nangcao-input-nhap" placeholder="nhập c" tabindex="3" onchange="onChangeDeBai()">= 0
+        </div>
+        <div id="error-message">
+
+        </div>
+        <div class="nangcao-ketqua">
+            <div id="debai"></div>
+            <button id="btnXemBaiGiai" class="btn" onclick="xemBaiGiai()">Xem bài giải</button>
+        </div>
+        <div id="baigiai" class="nangcao-giaithich">
+
+        </div>
+    </div>
+
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        try {
+            window.onerror = window.top.onerror;
+        } catch (ex) { }
+        if (!window.Desmos) window.Desmos = {};
+        window.Desmos.config = { "sciKeypad": true, "degreeMode": true };
+    </script>
+    <script src="./assets/build/calculator_basic-fb4987fe8222351d0d448f3dd8233c35e7c67ee1.min.js"></script>
+    <script>
+        require([
+            'toplevel/calculator_basic',
+            'testbridge',
+        ], function (Calc, TestBridge) {
+            window.Calc = Calc;
+            TestBridge.ready();
+        });
+    </script>
+    <script src="assets/main.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="nangcao.js"></script>
+    <script src="maytinh.js"></script>
+</body>
+
+</html>
