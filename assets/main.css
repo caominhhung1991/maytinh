@@ -1,117 +1,88 @@
-body {
-  font-family: Arial, sans-serif;
-}
-@-moz-keyframes dcg-loading-pulse {
-  0% { opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 0; -moz-transform: scale(1.5, 1.5); }
-  100% { opacity: 0; -moz-transform: scale(1.5, 1.5); }
-}
-@-webkit-keyframes dcg-loading-pulse {
-  0% { opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 0; -webkit-transform: scale(1.5, 1.5); }
-  100% { opacity: 0; -webkit-transform: scale(1.5, 1.5); }
-}
-@-o-keyframes dcg-loading-pulse {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-    -o-transform: scale(1.5, 1.5);
-  }
-  100% {
-    opacity: 0;
-    -o-transform: scale(1.5, 1.5);
-  }
-}
-@keyframes dcg-loading-pulse {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-    transform: scale(1.5, 1.5);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.5, 1.5);
-  }
+/* make drag container visible */
+div#redips-drag {
+  display: table;
+  background: rgb(233, 233, 233);
+  width: 100%;
 }
 
-.dcg-loading-div-container {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: #FFF;
-  z-index: 1000;
+/* table */
+div#redips-drag table {
+  background-color: #eee;
+  width: 100%;
+	border-collapse: collapse;
+	/* margin: 7px;x */
 }
 
-.dcg-loading-background-div {
-  animation: dcg-loading-pulse 2.2s infinite;
-  left: 50%;
-  background: #eee;
-  width: 140px;
-  height: 140px;
-  display: inline-block;
-  moz-animation: dcg-loading-pulse 2.2s infinite;
-  ms-animation: dcg-loading-pulse 2.2s infinite;
-  o-animation: dcg-loading-pulse 2.2s infinite;
-  webkit-animation: dcg-loading-pulse 2.2s infinite;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -70px;
-  margin-top: -70px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+/* table cells */
+div#redips-drag td {
+  /* width: 100%; */
+  /* border: 1px solid navy; */
+	/* height: 50px; */
+	text-align: center;
+	font-size: 10pt;
 }
 
-.dcg-loading-div {
-  color: #fff;
-  font-size: 18px;
-  left: 50%;
-  width: 140px;
-  height: 140px;
-  display: inline-block;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: transparent;
-  margin-left: -70px;
-  margin-top: -70px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  background: no-repeat center center;
-  background-size: 120px 25px;
+/* drag object */
+.redips-drag {
+  /* margin: auto; */
+	text-align: center;
+	width: 129px;
+  height: 23px;
+  font-family: Arial,sans-serif;
+	line-height: 23px;
+	border: 1px solid SteelBlue;
+	background-color: white;
+	font-size: 10pt; /* needed for cloned object */
+	/* round corners */
+	border-radius: 4px; /* Opera, Chrome */
+	-moz-border-radius: 4px; /* FF */
 }
 
-.btn {
-  margin: 10px 0;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  background: #ce3e3e;
-  color: white;
+/* orange elements */
+.orange {
+	border: 2px solid #FF8A58;
 }
 
-.btn:active {
-  background: #992727;
+/* forbidden cells */
+.redips-mark {
+	background-color: #ccc;
 }
+
+/* trash cell */
+.redips-trash {
+	color: white;
+	background-color: SteelBlue;
+}
+
+/* styles for user defined overflow td */
+td#overflow {
+	padding-bottom: 6px;
+}
+	td#overflow div {
+		float: left;
+		margin-left: 5px;
+		margin-top: 5px;
+	}
+
+/* space between radio/checkbox and text */
+div#redips-drag input {
+	margin-right: 10px;
+}
+
+/* margins for drop down menu */
+#dropDown {
+	margin: 7px 0 0 7px;
+}
+
+/* text style */
+.mycontrols {
+	margin: 5px;
+	color: grey;
+	font-size: 16px;
+}
+
+#mini {
+	display: none;
+	margin-top: 5px;
+}
+

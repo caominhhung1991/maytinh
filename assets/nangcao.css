@@ -33,7 +33,7 @@
     font-size: 16px;
     border-radius: 3px;
     border: 1px solid #ccc;
-    text-align: right;
+    text-align: center;
 }
 
 .nangcao-input-nhap:focus {
@@ -52,9 +52,9 @@
 
 #debai b {
     color: red;
-}
+} 
 
-#error-message {
+#error-message-pt2 {
     display: none;
     color: red;
     padding: 2px 20px;
