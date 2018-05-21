@@ -1,7 +1,7 @@
 dragElement(document.getElementById("maytinh"));
 
 let WIDTH_MY_DIV = 400;
-let MARGIN = 10;
+let MARGIN = 0;
 let GHIM_TOGGLE = true;
 let SHOW_MAYTINH_TOGGLE = true;
 
@@ -14,7 +14,7 @@ function dragElement(element) {
     } else {
         element.onmousedown = dragMouseDown;
     }
-
+ 
     function dragMouseDown(e) {
         e = e || window.event;
         pos3 = e.clientX;
@@ -50,7 +50,7 @@ function dragElement(element) {
         //             left: ${element.offsetLeft + WIDTH_MY_DIV / 2}`)
 
         if (left <= width / 2) {
-            element.style.left = "10px";
+            element.style.left = "0px";
         } else {
             element.style.left = (width - element.offsetWidth - MARGIN) + "px";
         }
@@ -72,7 +72,7 @@ function dragElement(element) {
         let left = element.offsetLeft;
 
         if (top < MARGIN) {
-            element.style.top = "10px";
+            element.style.top = "0px";
 
         } else if (top + element.offsetHeight + MARGIN > window.innerHeight) {
             // toạ độ trên + tổng chiều cao của máy tính + 10 so với chiều cao của browser 
@@ -81,7 +81,7 @@ function dragElement(element) {
         }
 
         if (left < MARGIN) {
-            element.style.left = "10px";
+            element.style.left = "0px";
         } else if (left + element.offsetWidth + MARGIN > window.innerWidth) {
             // toạ độ trái + tổng chiều dài của máy tính + 10 so với chiều dài của browser 
             // thì toạ độ trái = (chiều dài của sổ - chiều dài máy tính - margin)
@@ -159,14 +159,14 @@ function checkWidthHeight_outsize(element) {
     let width = window.innerWidth;
     let left_check = element.offsetLeft + element.offsetWidth / 2;
     if (left_check <= width / 2) {
-        element.style.left = "10px";
+        element.style.left = "0px";
     } else {
         element.style.left = (width - element.offsetWidth - MARGIN) + "px";
     }
 
     console.log(element.offsetWidth, element.offsetHeight)
     if (top < MARGIN) {
-        element.style.top = "10px";
+        element.style.top = "0px";
     } else if (top + element.offsetHeight + MARGIN > window.innerHeight) {
         // toạ độ trên + tổng chiều cao của máy tính + 10 so với chiều cao của browser 
         // thì toạ độ trên của máy tính = (chiều cao của sổ - chiều cao máy tinh - margin)
@@ -174,7 +174,7 @@ function checkWidthHeight_outsize(element) {
     }
 
     if (left < MARGIN) {
-        element.style.left = "10px";
+        element.style.left = "0px";
     } else if (left + element.offsetWidth + MARGIN > window.innerWidth) {
         // toạ độ trái + tổng chiều dài của máy tính + 10 so với chiều dài của browser 
         // thì toạ độ trái = (chiều dài của sổ - chiều dài máy tính - margin)

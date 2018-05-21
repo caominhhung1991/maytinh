@@ -74,7 +74,7 @@ let maytinh = `
 		</colgroup>
 		<tbody>
 			<tr>
-				<td id="ptb2"><div class="redips-drag" onclick="showPhuongTrinhBac2()">Phương trình B2</div></td>
+				<td id="ptb2"><div class="redips-drag" onclick="showPhuongTrinhBac2()">Các dạng PT cơ bản</div></td>
 				<td id="ptb3"><div class="redips-drag">Phương trình B3</div></td>
 				<td id="hbpt"><div class="redips-drag">Hệ bất PT</div></td>
 			</tr>

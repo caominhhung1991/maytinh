@@ -259,6 +259,9 @@
   .nangcao-title .fa-times:hover {
     color: white; }
 
+#a, #b, #c {
+  font-size: 13px; }
+
 details summary {
   cursor: pointer;
   padding: 10px 0;
@@ -305,8 +308,57 @@ details .error-message {
     .thapphan .co2nghiem .mau {
       position: absolute;
       top: 70%;
-      left: 18px; }
-    .thapphan .co2nghiem .delta {
-      border-top: 0.4px solid blue; }
+      left: 30%; }
+    .thapphan .co2nghiem .mau2 {
+      position: absolute;
+      top: 70%; }
+  .thapphan .canbac {
+    border-top: 0.4px solid blue; }
+  .thapphan .kq1 {
+    padding-left: 20px; }
+
+.nghiem {
+  color: red !important; }
+  .nghiem .tu {
+    border-bottom: 0.4px solid red !important; }
+  .nghiem .canbac {
+    border-top: 0.4px solid red !important; }
+
+#bac3 .nangcao-debai {
+  font-size: 16px; }
+#bac3 .input {
+  width: 50px;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 15px; }
+#bac3 #error-message-pt3 {
+  display: none;
+  color: red;
+  padding: 2px 20px; }
+#bac3 #btnXemBaiGiai-bac3 {
+  display: none;
+  cursor: pointer;
+  outline: none; }
+#bac3 #baigiai-bac3 {
+  display: none;
+  margin: 2px 20px 10px 20px; }
+
+.ml-10 {
+  margin-left: 20px; }
+
+.mr-10 {
+  margin-right: 20px; }
+
+.mr-5 {
+  margin-right: 5px; }
+
+.mr-2 {
+  margin-right: 2px; }
+
+.guide-input-item {
+  margin: 5px 5px 5px 10px; }
+
+.canbac {
+  border-top: 0.4px solid black; }
 
 /*# sourceMappingURL=maytinh.css.map */
