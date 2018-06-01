@@ -237,8 +237,7 @@ function showMayTinhContent_animate() {
         setTimeout(function() {
             $("#maytinh-content").toggleClass("fadeIn");
         }, 500)
-    }, 500)
-    
+    }, 500)   
 }
 
 function hideMayTinhContent_animate() {

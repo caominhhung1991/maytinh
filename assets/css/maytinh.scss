@@ -436,10 +436,18 @@ details {
 
 // begin guide input
 .guide-input-item {
-  margin: 5px 5px 5px 10px;
+  //margin: 5px 5px 5px 10px;
 }
 // end guide input 
 
 .canbac {
   border-top: 0.4px solid rgb(0, 0, 0);
+}
+
+// Guide Input 
+.guide-input {
+
+  &__item {
+    margin: 5px 5px 5px 10px;
+  }
 }

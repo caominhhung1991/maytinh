@@ -355,10 +355,10 @@ details .error-message {
 .mr-2 {
   margin-right: 2px; }
 
-.guide-input-item {
-  margin: 5px 5px 5px 10px; }
-
 .canbac {
   border-top: 0.4px solid black; }
+
+.guide-input__item {
+  margin: 5px 5px 5px 10px; }
 
 /*# sourceMappingURL=maytinh.css.map */
