@@ -75,14 +75,9 @@ let maytinh = `
 		<tbody>
 			<tr>
 				<td id="ptb2"><div class="redips-drag" onclick="showPhuongTrinhBac2()">Các dạng PT cơ bản</div></td>
-				<td id="ptb3"><div class="redips-drag">Phương trình B3</div></td>
-				<td id="hbpt"><div class="redips-drag">Hệ bất PT</div></td>
+				
 			</tr>
-			<tr>
-				<td id="lgcb"><div class="redips-drag">Lượng giác CB</div></td>
-				<td id="tp"><div class="redips-drag">Tích phân</div></td>
-				<td id="lgnc"><div class="redips-drag">Lượng giác NC</div></td>
-			</tr>
+			
 		</tbody>
 	</table>
 
@@ -93,16 +88,8 @@ let maytinh = `
 			<col width="100"/>
 		</colgroup>
 		<tbody>
-			<tr>
-				<td><div class="redips-drag" id="ct1">Công thức 1</div></td>
-				<td><div class="redips-drag" id="ct2">Công thức 2</div></td>
-				<td><div class="redips-drag" id="ct3">Công thức 3</div></td>
-			</tr>
-			<tr>
-				<td><div class="redips-drag" id="ct4">Công thức 4</div></td>
-				<td><div class="redips-drag" id="ct5">Công thức 5</div></td>
-				<td><div class="redips-drag" id="ct6">Công thức 6</div></td>
-			</tr>
+			
+
 		</tbody>
 	</table>
 `;
@@ -127,3 +114,25 @@ function setNangCaoLocalStorage() {
 function setBtnShowXemThemLocalStorage() {
 	window.localStorage.setItem("btnShowXemThem", $("#btnShowXemThem").html());
 }
+
+/* <td id="ptb3"><div class="redips-drag">Phương trình B3</div></td>
+<td id="hbpt"><div class="redips-drag">Hệ bất PT</div></td> */
+
+/* <tr>
+	<td id="lgcb"><div class="redips-drag">Lượng giác CB</div></td>
+	<td id="tp"><div class="redips-drag">Tích phân</div></td>
+	<td id="lgnc"><div class="redips-drag">Lượng giác NC</div></td>
+</tr> */
+
+/* 
+<tr>
+	<td><div class="redips-drag" id="ct1">Công thức 1</div></td>
+	<td><div class="redips-drag" id="ct2">Công thức 2</div></td>
+	<td><div class="redips-drag" id="ct3">Công thức 3</div></td>
+</tr>
+
+<tr>
+	<td><div class="redips-drag" id="ct4">Công thức 4</div></td>
+	<td><div class="redips-drag" id="ct5">Công thức 5</div></td>
+	<td><div class="redips-drag" id="ct6">Công thức 6</div></td>
+</tr> */
