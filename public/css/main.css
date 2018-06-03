@@ -1,0 +1,145 @@
+/* make drag container visible */
+div#redips-drag {
+  display: table;
+  background: #e9e9e9;
+  width: 100%; }
+
+/* table */
+div#redips-drag table {
+  background-color: #eee;
+  width: 100%;
+  border-collapse: collapse;
+  /* margin: 7px;x */ }
+
+/* table cells */
+div#redips-drag td {
+  /* width: 100%; */
+  /* border: 1px solid navy; */
+  /* height: 50px; */
+  text-align: center;
+  font-size: 10pt; }
+
+/* drag object */
+.redips-drag {
+  /* margin: auto; */
+  text-align: center;
+  width: 129px;
+  height: 23px;
+  font-family: Arial,sans-serif;
+  line-height: 23px;
+  border: 1px solid SteelBlue;
+  background-color: white;
+  font-size: 10pt;
+  /* needed for cloned object */
+  /* round corners */
+  border-radius: 4px;
+  /* Opera, Chrome */
+  -moz-border-radius: 4px;
+  /* FF */ }
+
+/* orange elements */
+.orange {
+  border: 2px solid #FF8A58; }
+
+/* forbidden cells */
+.redips-mark {
+  background-color: #ccc; }
+
+/* trash cell */
+.redips-trash {
+  color: white;
+  background-color: SteelBlue; }
+
+/* styles for user defined overflow td */
+td#overflow {
+  padding-bottom: 6px; }
+
+td#overflow div {
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px; }
+
+/* space between radio/checkbox and text */
+div#redips-drag input {
+  margin-right: 10px; }
+
+/* margins for drop down menu */
+#dropDown {
+  margin: 7px 0 0 7px; }
+
+/* text style */
+.mycontrols {
+  margin: 5px;
+  color: grey;
+  font-size: 16px; }
+
+#mini {
+  display: none;
+  margin-top: 5px; }
+
+#nangcao {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  /* height: 200px; */
+  position: absolute;
+  opacity: 1;
+  display: none;
+  border-radius: 5px;
+  background: #f7f7f7; }
+
+.nangcao-title h3 {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: #59bc65;
+  color: white; }
+
+.nangcao-debai {
+  font-size: 19px;
+  padding: 10px 20px 5px 20px; }
+
+.nangcao-input-nhap {
+  margin-right: 2px;
+  padding: 5px;
+  width: 60px;
+  height: 18px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  text-align: center; }
+
+.nangcao-input-nhap:focus {
+  outline: none; }
+
+.nangcao-ketqua {
+  padding: 2px 20px; }
+
+#debai p, #baigiai p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: blue; }
+
+#debai b {
+  color: red; }
+
+#error-message-pt2 {
+  display: none;
+  color: red;
+  padding: 2px 20px; }
+
+#btnXemBaiGiai {
+  display: none;
+  cursor: pointer;
+  outline: none; }
+
+#baigiai {
+  display: none;
+  margin: 2px 20px 10px 20px; }
+
+.displayBlock {
+  display: block !important; }
+
+/*# sourceMappingURL=main.css.map */
